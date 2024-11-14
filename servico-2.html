@@ -37,9 +37,10 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-            'event': 'pageview',
+            'event': 'ProductPage',
             'pagePath': window.location.pathname,
-            'pageTitle': document.title
+            'pageTitle': document.title,
+            'productID': 222
         });
     </script>
 
@@ -53,6 +54,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <h1>Detalhes do Serviço 2</h1>
+    <div id="productID" product_id='222' style="display: none; visibility: hidden;"></div>
     <button onclick="window.location.href='checkout.html'">Comprar</button>
 </body>
 </html>
