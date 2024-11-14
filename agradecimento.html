@@ -35,6 +35,15 @@
     <!-- End Google tag (gtag.js) -->
 
     <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'pageview',
+            'pagePath': window.location.pathname,
+            'pageTitle': document.title
+        });
+    </script>
+
+    <script>
         window.onload = function() {
             const orderID = Math.floor(Math.random() * 1000000);
             document.getElementById('orderID').innerText = `Seu número de pedido é: ${orderID}`;
