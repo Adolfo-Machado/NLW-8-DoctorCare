@@ -58,5 +58,10 @@
 
     <h1>Obrigado pela sua compra!</h1>
     <p id="orderID"></p>
+    <script>
+        gtag('event', 'purchase', {
+            orderID: orderID
+        })
+    </script>
 </body>
 </html>
