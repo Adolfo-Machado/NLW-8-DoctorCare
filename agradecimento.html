@@ -38,12 +38,6 @@
         });
     </script>
 
-    <script>
-        window.onload = function() {
-            const orderID = Math.floor(Math.random() * 1000000);
-            document.getElementById('orderID').innerText = `Seu número de pedido é: ${orderID}`;
-        };
-    </script>
 </head>
 <body>
 
@@ -58,10 +52,16 @@
 
     <h1>Obrigado pela sua compra!</h1>
     <p id="orderID"></p>
+
     <script>
-        gtag('event', 'purchase', {
-            orderID: orderID
-        })
+        window.onload = function() {
+            const orderID = Math.floor(Math.random() * 1000000);
+            document.getElementById('orderID').innerText = `Seu número de pedido é: ${orderID}`;
+
+            gtag('event', 'purchase', {
+                orderID: orderID
+            })
+        };
     </script>
 </body>
 </html>
