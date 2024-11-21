@@ -485,6 +485,10 @@
                         src="assets/doutor-feliz-segurando-prancheta-com-pacientes.png"
                         alt="Doutor feliz segurando prancheta com pacientes"
                     />
+                    <div style="margin-top: 20px;">
+                        <h5>Subscribe to our newsletter</h5>
+                        <button onclick="window.location.href='newsletter.html'">Subscribe</button>
+                    </div>
                 </div>
 
             </div>
@@ -626,7 +630,7 @@
                 <div class="col-b">
                     <ul class="social-links">
                         <li>
-                            <a target="_blank" href="https://instagram.com">
+                            <a id="share-instagran" class="share-button" target="_blank" href="https://instagram.com">
                                 <svg
                                     width="24"
                                     height="24"
@@ -655,7 +659,7 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://facebook.com">
+                            <a id="share-facebook" class="share-button" target="_blank" href="https://facebook.com">
                                 <svg
                                     width="24"
                                     height="24"
@@ -672,7 +676,7 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://youtube.com">
+                            <a id="share-youtube" class="share-button" target="_blank" href="https://youtube.com">
                                 <svg
                                     width="24"
                                     height="24"
@@ -695,6 +699,18 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <form id="newsletter-footer" action="/thank-you.html">
+                        <h5>Subscribe to our newsletter</h5>
+                        <div>
+                            <label for="newsletter1">Email address</label>
+                            <input id="email" name="email" type="text" placeholder="Email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                        <p style="font-size: 10px;">This is a demo and does not save your email.</p>
+                    </form>
                 </div>
 
             </div>
